@@ -43,7 +43,7 @@ $app->get("/login", function () use ($app) {
 
    if(isset($_SESSION['urlRedirect']))$urlRedirect = $_SESSION['urlRedirect'];
 
-   $app->render('login.php', array('url'=>$app->config('burl'),'error'=>$error, 'urlRedirect'=>$urlRedirect));
+   $app->render('login.php', array('url'=>$app->config('url'),'error'=>$error, 'urlRedirect'=>$urlRedirect));
 });
 
 $app->post("/login", function () use ($app,$db) {
@@ -59,10 +59,10 @@ $app->post("/login", function () use ($app,$db) {
     if ($rowcount==0) {
         $errors="Invalid UserName/Password!!";
 		$app->flash('error', $errors);
-		$app->redirect($app->config('burl').'/login');		
+		$app->redirect($app->config('url').'/login');		
     }
 
-    $_SESSION['user'] = $uname;$_SESSION['burl'] = $app->config('burl');	
+    $_SESSION['user'] = $uname;$_SESSION['url'] = $app->config('url');	
 
     if (isset($_SESSION['urlRedirect'])) {
        $tmp = $_SESSION['urlRedirect'];unset($_SESSION['urlRedirect']);$app->redirect($tmp);
