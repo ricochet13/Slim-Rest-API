@@ -1,10 +1,10 @@
 Slim-Rest-API
 =============
 
-Slim Framework RESTful API with AngularJS
+A simple Slim Framework RESTful API with AngularJS
 
 -------------
 
-dowload the latest framework here:
+download the latest framework here:
 
 http://www.slimframework.com/
