@@ -28,7 +28,7 @@
   </head>
 
   <body>  
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
 		  <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,7 +47,7 @@
 		  <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link"><?=$_SESSION['user']?></a></p>
         </div><!--/.nav-collapse -->
       </div>
-    </div>
+    </nav>
 	
 	<div class="modal fade" id="modalCP" tabindex="-1" role="dialog" aria-labelledby="modalCPLabel" aria-hidden="true">
   <div class="modal-dialog">
