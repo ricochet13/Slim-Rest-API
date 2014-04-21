@@ -117,10 +117,10 @@ $scope.chgRPP=function(){$scope.tot=0;load(1,$scope.drpp);}
 				</td>
 				<td>
 					<div class="btn-group pull-right">
-						<button class="btn btn-warning btn-sm" ng-click="edit(u)" title="edit" data-toggle="modal" data-target="#modalEdit">
+						<button class="btn btn-warning btn-xs" ng-click="edit(u)" title="edit" data-toggle="modal" data-target="#modalEdit">
 							<i class="glyphicon glyphicon-pencil"></i>
 							</button>
-						<button class="btn btn-danger btn-sm" ng-click="delete(u.id,$index)" title="delete">
+						<button class="btn btn-danger btn-xs" ng-click="delete(u.id,$index)" title="delete">
 						<i class="glyphicon glyphicon-remove"></i></button>
 					</div>
 				</td>
