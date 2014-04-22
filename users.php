@@ -34,7 +34,7 @@ $scope.aun="";$scope.afn="";$scope.apwd="";
 $scope.users.push(data);
 }).
 error(function(data, status, headers, config){
-$scope.aun="";$scope.afn="";$scope.apwd="";alert('Error!');
+$scope.aun="";$scope.afn="";$scope.apwd="";alert('Employee No. Exists!');
 });
 }}
 
